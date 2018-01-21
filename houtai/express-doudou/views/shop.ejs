@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/style/style.css' />
+    <link rel="stylesheet" href="style/shop.css" type="text/css"/>
+  </head>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <body>
+    <div class="o">
+
+    <h1>
+        <span><a href="#">ECSHOP 管理中心 </a></span>
+        <span class="er"> - 商品列表</span>
+        <span class="san"><img src="images/jnsy.png"/></span>
+        <span id="tian"><a href="/list">+添加新商品</a></span>
+    </h1>
+    <div class="from_div">
+    <form action="javascript:searchGoods()" name="searchForm">
+        <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH">
+    
+    <!--分类-->
+     <select name="cat_id">
+         <option value=0>所有分类</option>
+         <option value=132>钻石</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;内衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家居服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;套装</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;袜子</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;长衫</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;背心</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖T恤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;裤子</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牛仔裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短裤裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;休闲裤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;外套</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羽绒服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮草</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夹克</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卫衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;棉衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风衣</option>
+     </select>
+     <!--品牌-->
+     <select name="brand_id">
+         <option value="0">所有品牌</option>
+         <option value="44">花艺年华</option>
+         <option value="44">EVENY</option>
+         <option value="44">圣迪奥</option>
+         <option value="44">韩都衣舍</option>
+         <option value="44">betu百图</option>
+         <option value="44">艾福斯</option>
+         <option value="44">太平鸟</option>
+         <option value="44">空间大师</option>
+         <option value="44">美好家</option>
+    </select>
+        <!--推荐-->
+    <select name="intro_type">
+         <option value="0">全部</option>
+         <option value="44">精品</option>
+         <option value="44">新品</option>
+         <option value="44">热销</option>
+         <option value="44">特价</option>
+         <option value="44">全部推荐</option>
+    </select>
+      <!--上架-->
+      <select name="is_on_sale">
+         <option value="0">全部</option>
+         <option value="44">上架</option>
+         <option value="44">下架</option>
+    </select>
+    关键字
+    <input type="text" name="keyword" size="15" id="hunt"/>
+    <input type="submit" value="搜索" class="button" onclick="seek()"/>
+</form>
+    </div>
+
+
+<div class="bian">
+    <ul>
+           <li>
+               <input type="checkbox"/>
+               <a href="javascript:listTable.sort('good_id')" title="点击对列表序号">编号</a>
+               <img src="images/sort_asc.gif"/>
+           </li>
+           <li>
+               <span>商品名称</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>货号</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>价格</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>上架</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>精品</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>新品</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>热销</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>推荐排序</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>库存</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>虚拟销量</span>
+               <i id="i"><img src="images/sort_asc.gif"></i>
+           </li>
+           <li>
+               <span>操作</span>
+           </li>
+    </ul>
+
+
+<!--.......添加数据........-->
+<div class="shi" id="ul">
+<!--<ul>
+           <li>
+               <input type="checkbox"/>
+              <span>174</span>
+           </li>
+           <li>
+               <span id="shangs_name">史蒂夫</span>
+           </li>
+           <li>
+               <span id="shangs_num">ES123</span>
+           </li>
+           <li>
+               <span id="shangs_price">44</span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/no.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span>100</span>
+           </li>
+           <li>
+               <span id="shangs_xn">123</span>
+           </li>
+           <li>
+               <span>123</span>
+           </li>
+           <li>
+               <span><img src="images/icon_view.gif"></span>
+               <span><img src="images/icon_edit.gif"></span>
+               <span><img src="images/icon_copy.gif"></span>
+               <span id="shan"><img src="images/icon_trash.gif"></span>
+           </li>
+    </ul>-->
+</div>
+<!--分页-->
+<div class="fen">
+       <div class="ye" id="ye">
+           <span><i class="s" onclick="fipage(1)">第一页</i>
+           <i class="s" onclick="endpage(-1)">上一页</i>
+           <i class="s" onclick="endpage(1)">下一页</i>
+           <i class="s" onclick="fipage()">最末页</i>
+           <select  class="yema" onclick="tiaoye()">
+               <option>1</option>
+               </select>
+               </span>
+            <span>总计<i class="zj">2</i>个记录
+            分为<i class="ym">1</i>页
+            当前第<i class="dangqian">1</i>页，
+            每页<input type="text" value="5" class="listnum"/>
+            </span>
+       </div>
+    </div>
+
+    </div>
+
+
+    
+
+
+<div class="qu">
+      <select>
+          <option>请选择···</option>
+          <option>回收价</option>
+          <option>上架</option>
+          <option>下架</option>
+          <option>精品</option>
+          <option>取消精品</option>
+          <option>新品</option>
+          <option>取消新品</option>
+          <option>热销</option>
+          <option>取消热销</option>
+          <option>转移到分类</option>
+      </select>
+      <input tyoe="submit" value="确认" id="ren"/>
+</div>
+
+
+<!--公用-->
+<div class="wei">
+<p>共执行 7 个查询，用时 0.022833 秒，Gzip 已禁用，内存占用 3.536 MB</p>
+<p>版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</p>
+</div>
+
+</div>
+
+  </body>
+</html>
+
+<!--<script type="text/javascript">
+ (function(){
+        $.ajax({
+            url:"/huo",
+            type:"get",
+            data:{},
+            success:function(res){
+                console.log(res.length)
+                var len = res.length
+                for(i=0;i<len;i++){
+                    console.log(res[i])
+
+
+            var str=`<ul>
+                         <li>
+               <input type="checkbox"/>
+              <span>${Math.floor(Math.random()*1000)}</span>
+           </li>
+           <li>
+               <span id="shangs_name">${res[i].shangs_name}</span>
+           </li>
+           <li>
+               <span id="shangs_num">${res[i].shangs_num}</span>
+           </li>
+           <li>
+               <span id="shangs_price">${res[i].shangs_price}</span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/no.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span><img src="images/yes.gif"></span>
+           </li>
+           <li>
+               <span>100</span>
+           </li>
+           <li>
+               <span id="shangs_xn">1</span>
+           </li>
+           <li>
+               <span>${res[i].shangs_xn}</span>
+           </li>
+           <li>
+               <span><img src="images/icon_view.gif"></span>
+               <span><img src="images/icon_edit.gif"></span>
+               <span><img src="images/icon_copy.gif"></span>
+               <span id="shan"><img src="images/icon_trash.gif"></span>
+           </li>
+                    </ul>`
+        
+        $("#ul").append(str);
+     
+              }
+
+    //点击删除
+        $("#ul").on("click","#shan",function(){
+            $(this).parent().parent().remove();
+
+        })
+
+
+            }
+
+
+        })
+    
+    }());
+
+
+
+</script>-->
+</html>
+<script type="text/javascript" src="/js/shop.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+

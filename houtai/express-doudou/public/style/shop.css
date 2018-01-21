@@ -1,0 +1,58 @@
+*{margin:0;padding:0}
+body{padding:0;height:100%;margin:0;}
+html{height:100%}
+.o{width:100%;min-height:100%;background:url(../images/body_bj.jpg)repeat left top;padding:5px;font-size:12px ;}
+.o h1{border-bottom: 1px solid #ccc;color: #333;font-weight: normal;padding: 7px 10px;margin: 0 0 10px 0;overflow: hidden;
+font-size:18px;width:97%;margin:0 auto}
+.o h1 span{display: block;float:left;color:#000;}
+.o h1 span img{display: block}
+.o h1 span a{text-decoration: none;color:#000;}
+.o h1 .er{margin-left:5px;}
+.o h1 .san{margin-left:15px;}
+.o h1 #tian{font-size:14px;color:#fff;width:110px;height:26px;background:red;text-align: center;line-height:26px;border-radius: 3px;
+display: block;float:right;}
+.o h1 #tian a{color:#fff;display:block;width:110px;height:26px;line-height:26px;text-align: center}
+.o .from_div{background: #f3f3f3 url(../images/th_bg.gif) repeat-x;border: 1px solid #ddd;padding: 5px;color: #808080;margin:10px auto;
+width:97%;}
+.o select{font-size:12px;}
+.o input.button{padding: 5px 15px 5px;margin: 2px 2px;border: none;background: #ff3f3f;color: #FFF;cursor: pointer;border-radius: 3px;}
+
+.bian{display: table-row-group; vertical-align: middle;border-color: inherit;width:97%;margin:0 auto;}
+.bian ul{display: table-row;vertical-align: inherit;border-color: inherit;overflow: hidden;border-bottom:1px solid #333;
+margin:0 auto}
+.bian ul li{min-width:90px;height:39px;border-right:1px solid #ddd;line-height: 39px; background: #f3f3f3 url(../images/th_bg.gif) repeat-x;
+white-space: nowrap;text-align: center;float:left;list-style:none}
+.bian ul li input{margin-top:15px;margin-left:20px;}
+.bian ul li img{margin-top:17px;}
+.bian ul li a{text-decoration: none;color:#000;margin-left:5px;cursor: pointer}
+.bian ul li span{cursor: pointer}
+.bian ul li input,a{float:left;display:block;}
+.bian ul li #i{display:none;}
+/*.o .bian ul li:nth-of-type(2){width:140px;}
+.o .bian ul li:nth-of-type(3){width:198px;}
+.o .bian ul li:nth-of-type(4){width:77px;}
+.o .bian ul li:nth-of-type(5),li:nth-of-type(6),li:nth-of-type(7),li:nth-of-type(8){width:50px;}
+.o .bian ul li:nth-of-type(9){width:80px;}*/
+.o .bian ul li:nth-of-type(10){width:60px;}
+.o .bian ul li:nth-of-type(11){width:90px;}
+.o .bian ul li:nth-of-type(12){width:130px;}
+
+.o .bian .shi{overflow: hidden;}
+.o .bian .shi ul{height:55px;}
+.o .bian .shi ul li{height:55px;background:#fff;border-top:2px solid #ddd;}
+
+.o .fen{height:45px;width:1133px;background:#fff;border-top:1px solid #ddd;}
+.o .fen input{width:20px;}
+.o .fen i{font-style: normal}
+.o .fen span{float:right;}
+.o .fen .ye{overflow: hidden;margin-top:15px;margin-right:20px;}
+.o .fen .ye span{padding:0 10px;}
+.o .fen .ye span:nth-of-type(2){border-right:1px solid #ccc;}
+.o .fen .ye .s{cursor: pointer;margin-right:10px;}
+.o .fen .ye .s:hover{color:skyblue;}
+
+.o .qu{padding:10px;}
+.o .qu #ren{width:55px;height:25px;background:red;border:none;text-align: center;line-height:25px;color:#fff;border-radius: 5px;}
+
+.o .wei{height:64px;width:100%;background:#f3f3f3;margin-top:20px;padding:10px 0 10px 0}
+.o .wei p{width:1159px;text-align: center;margin-top:10px;color:#808080};

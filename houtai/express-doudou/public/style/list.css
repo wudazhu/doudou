@@ -1,0 +1,47 @@
+*{margin:0;padding:0}
+html,body{height:100%;}
+
+.o2{overflow: hidden;background:url(../images/body_bj.jpg)repeat left top;width:100%;}
+.z{width:96%;overflow: hidden;margin:0 auto;}
+.o2 h1{border-bottom: 1px solid #ccc;color: #333;font-weight: normal;padding: 7px 10px;margin: 0 0 10px 0;overflow: hidden;
+font-size:18px;}
+.o2 h1 span{display: block;float:left;color:#000;}
+.o2 h1 span img{display: block}
+.o2 h1 span a{text-decoration: none;color:#000;}
+.o2 h1 .er{margin-left:5px;}
+.o2 h1 .san{margin-left:15px;}
+.o2 h1 #tian{font-size:14px;color:#fff;width:110px;height:26px;background:red;text-align: center;line-height:26px;border-radius: 3px;
+display: block;float:right;}
+.o2 h1 #tian a{color:#fff;}
+
+.o2 .z .tong{border:1px solid #ddd;}
+.o2 .z .tong .tab{overflow: hidden;background:#efefef}
+.o2 .z .tong .tab ul{overflow: hidden;padding-left:10px;}
+.o2 .z .tong .tab ul li{height:39px;padding:0 20px;line-height:39px;list-style: none;float:left;font-size:14px;}
+.o2 .z .tong .tab-div{overflow: hidden;background:#fff;padding:10px;}
+.o2 .z .tong .tab-div from{display: block}
+.o2 .z .tong .tab-div p{padding-left:300px;overflow: hidden;line-height:30px;font-size:14px;margin-top:10px;}
+.o2 .z .tong .tab-div p span:nth-of-type(4){margin-left:20px;}
+.o2 .z .tong .tab-div p .xing{color:red;margin-left:30px;}
+.o2 .z .tong .tab-div p .jia{font-size:12px;font-weight:bold}
+.o2 .z .tong .tab-div p span i{font-style: normal;font-size:12px;color:#333}
+
+.o2 .wei{height:64px;width:100%;background:#f3f3f3;margin-top:20px;padding:10px 0 10px 0;border:1px solid #ddd;margin-bottom:30px;}
+.o2 .wei p{width:1159px;text-align: center;margin-top:10px;color:#808080;font-size:12px};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

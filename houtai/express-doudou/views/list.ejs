@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='style' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="style/list.css" type="text/css"/>
+  </head>
+  <body>
+      <div class="o2">
+          <div class="z">
+     <h1>
+        <span><a href="#">ECSHOP 管理中心 </a></span>
+        <span class="er"> - 添加新商品</span>
+        <span class="san"><img src="images/jnsy.png"/></span>
+        <span id="tian"><a href="/shop">+商品列表</a></span>
+    </h1>  
+
+    <div class="tong">
+        <div class="tab">
+               <ul>
+                   <li>通用信息</li>
+                   <li>详细描述</li>
+                   <li>其他信息</li>
+                   <li>商品属性</li>
+                   <li>商品相册</li>
+                   <li>关联商品</li>
+                   <li>配件</li>
+                   <li>关联文章</li>
+                   </ul>
+            </div>
+
+        <div class="tab-div">
+
+
+
+              <from action methed="post">
+                <p>
+                    <span class="jia">商品名称：</span>
+
+
+
+         <!-----------商品名-------->
+                    <span><input type="text" id="shangs_name"/></span>
+
+                    <span><img src="images/color_selecter.gif" style="margin-top:2px;"></span>
+                    <span>
+                        <select>
+                            <option>字体样式</option>
+                            <option>加粗</option>
+                            <option>斜体</option>
+                            <option>下划线</option>
+                            <option>删除线</option>
+                        </select>
+                    </span>
+                    <span class="xing">*<span>
+                </p>
+                <p>
+                   <img src="images/notice.gif"/>
+                    <span class="jia">商品货号：</span>
+                    <span>
+
+
+
+
+        <!----------货号---------------->
+                        <input type="text" id="shangs_num"/></br>
+
+                       <i> 如果您不输入商品货号，系统将自动生成一个唯一的货号。</i>
+                    </span>
+                </p>
+
+                <p>
+                    <span class="jia">
+                        商品分类：
+                    </span>
+                    <span>
+                        <select>
+                            <option value=0>所有分类</option>
+         <option value=132>钻石</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;内衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家居服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;套装</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;袜子</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;长衫</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;背心</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖T恤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;裤子</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牛仔裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短裤裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;休闲裤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;外套</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羽绒服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮草</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夹克</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卫衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;棉衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风衣</option>
+                        </select>
+                        </span>
+
+                        <span><button id="pingp">添加分类</button></span>
+                        <span><input type="text" id="in3" style="width:70px;"></span>
+                        <span><button>确定</button></span>
+                        <span><button>分类管理</button></span>
+                         <span><button><<</button></span>
+                        <span class="xing">*<span>
+                    </p>
+                    <p>
+                        <span  class="jia">扩展分类：</span>
+                        <span><button style="background:red;color:#fff;width:50px;">添加</button></span>
+                        <span>
+                             <select>
+                            <option value=0>所有分类</option>
+         <option value=132>钻石</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;内衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家居服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;套装</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;袜子</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;长衫</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;背心</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖T恤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖T恤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;裤子</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牛仔裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短裤裤</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;休闲裤</option>
+         <option value=154>&nbsp;&nbsp;&nbsp;&nbsp;外套</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羽绒服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮草</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夹克</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西服</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卫衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;棉衣</option>
+         <option value=158>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风衣</option>
+                        </select>
+                        </span>
+                    </p>
+                    <p>
+                        <span  class="jia">商品品牌：</span>
+                        <span>
+                            <select name="brand_id">
+         <option value="0">所有品牌</option>
+         <option value="44">花艺年华</option>
+         <option value="44">EVENY</option>
+         <option value="44">圣迪奥</option>
+         <option value="44">韩都衣舍</option>
+         <option value="44">betu百图</option>
+         <option value="44">艾福斯</option>
+         <option value="44">太平鸟</option>
+         <option value="44">空间大师</option>
+         <option value="44">美好家</option>
+    </select>
+                        </span>
+                        <span><button>添加品牌</button></span>
+                    </p>
+                    <p>
+                        <span  class="jia">本店售价：</span>
+
+ <!-----------价格------------------>
+                        <span><input type="text"  id="shangs_price"></span>
+                        <span><button id="ji">按市场计算</button></span>
+                        <span class="xing">*<span>
+                    </p>
+                     <p>
+                         <img src="images/notice.gif"/>
+                        <span  class="jia">会员价格：</span>
+                        <span>注册用户<input type="text" value="-1" id="in5" style="width:50px;"></span>
+                        <span>代销用户<input type="text" value="-1" id="in6" style="width:50px;"></span>
+                        <span>vip<input type="text" value="-1" id="in7" style="width:50px;"></span></br>
+                        <span><i>会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</i></span>
+                    </p>
+                    <p>
+                         <img src="images/notice.gif"/>
+                        <span  class="jia">商品优惠价格：</span>
+                        <span>[+]优惠数量<input type="text"  style="width:50px;"></span>
+                        <span>优惠价格<input type="text"  style="width:50px;"></span><br/>
+                        <span><i>购买数量达到优惠数量时享受的优惠价格</i></span>
+                    </p>
+                    <p>
+                        <span  class="jia">市场售价：</span>
+
+                        <span><input type="text"  style="width:50px;"></span>
+
+                        <span>优惠价格<input type="text" value="0"  style="width:50px;"></span>
+                        <span><button>取整</button></span>
+                    </p>
+                    <p>
+                        <span  class="jia">虚拟销量：</span>
+
+<!---------虚拟销量------------------>
+                        <span><input type="text" id="shangs_xn" style="width:50px;"></span>
+                    </p>
+                    <p>
+                         <img src="images/notice.gif"/>
+                        <span  class="jia">赠送消费积分数：</span>
+                        <span><input type="text" value="-1"  style="width:100px;"></span><br/>
+                        <span><i>购买该商品时赠送消费积分数,-1表示按商品价格赠送</i></span>
+                    </p>
+                    <p>
+                         <img src="images/notice.gif"/>
+                        <span  class="jia">赠送等级积分数：</span>
+                        <span><input type="text" value="-1"  style="width:100px;"></span><br/>
+                        <span><i>购买该商品时赠送等级积分数,-1表示按商品价格赠送</i></span>
+                    </p>
+                    <p>
+                         <img src="images/notice.gif"/>
+                        <span  class="jia">积分购买金额：</span>
+                        <span><input type="text" value="0"  style="width:100px;"></span><br/>
+                        <span><i>(此处需填写金额)购买该商品时最多可以使用积分的金额</i></span>
+                    </p>
+                    <p> 
+                        <span  class="jia"><input type="checkbox" id="chu"><lable id="chu">促销价</lable></span>
+                        <span><input type="text" id="c" value="0"></span>
+                    </p>
+                      <p>
+                        <span  class="jia">促销日期：</span>
+                        <span><input type="text" value="2017-08-01"  style="width:100px;"></span>
+                        <span><button style="width:50px;background:red;color:#fff;">选择</button></span>
+                        <span style="margin:0">-</span>
+                        <span><input type="text" value="2017-09-01"  style="width:100px;"></span>
+                        <span><button style="width:50px;background:red;color:#fff;">选择</button></span>
+                    </p>
+                    <p>
+                        <span  class="jia">上传商品图片：</span>
+                          <span><input type="file" style="width:70px;" value="选择文件"/>未选择任何文件</span>
+                        <span> <img src="images/no.gif"/></span><br/>
+                        <span><input type="text" placeholder="商品外部添加url" style="margin-left:80px;"/></span>
+                    </p>
+                    <p>
+                        <span  class="jia">上传商品缩略图：</span>
+                         <span><button type="file" id="img">选择文件</button>未选择任何文件</span>
+                        <span> <img src="images/no.gif"/></span><br/>
+                        <span><input type="text" placeholder="商品缩略外部添加url" style="margin-left:80px;"/></span><br/>
+                        <span><input type="checkbox" style="margin-left:80px;" />自动生成商场缩略图</span>
+                    </p>
+                    <p>
+                        <button type="button" onclick="upload()" id="qd" style="margin-left:160px;width:50px;background:red;color:#fff">确定</button>
+                        <button type="button" id="cz" style="width:50px;background:red;color:#fff">重置</button>
+                        </p>
+
+              </from>
+              
+        </div>
+    </div>
+      
+
+      <div class="wei">
+<p>共执行 7 个查询，用时 0.022833 秒，Gzip 已禁用，内存占用 3.536 MB</p>
+<p>版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</p>
+</div>
+
+</div>
+</div>
+  </body>
+</html>
+
+<script>
+     function upload(){
+         var form = new FormData();
+         form.append("shangs_name",document.getElementById("shangs_name").value)
+         form.append("shangs_price",document.getElementById("shangs_price").value)
+         form.append("shangs_num",document.getElementById("shangs_num").value)
+         form.append("shangs_xn",document.getElementById("shangs_xn").value)
+        //  form.append("img", document.getElementById("img").files);
+          
+         var xhr=new XMLHttpRequest();
+         xhr.open("POST","/api/shangs_upload");
+         xhr.onreadystatechange=function(res){
+             if(xhr.readyState==4 && xhr.status==200){
+                 console.log(xhr.responseText);
+                 var res=JSON.parse(xhr.responseText);
+                 alert(res.message);
+                 location.href="/shop";
+             }
+         }
+     xhr.send(form);
+    }
+    
+
+    function getdata(){
+        var URL=window.location.href.split('?');
+        var URL1=URL[1].split('&');
+        console.log(URL1);
+        var ushopname=decodeURIComponent(URL1[0]);
+        var ushopnum=URL[1];
+        var ushopprice=URL1[2];
+        $("#shangs_name").val(ushopname);
+        $("#shangs_num").val(ushopnum);
+        $("#shangs_price").val(ushopprice);
+    }
+    getdata();
+    </script>

@@ -1,0 +1,82 @@
+*{margin:0;padding:0;}
+html,body{height:100%;}
+.d{position: fixed;top:0;width:100%;z-index:2}
+.mo{height:82px;background:#303030}
+.mo .img1{padding-top:20px;margin-left:30px;float:left;}
+.mo .you{overflow: hidden;float:right;width:1000px;height: 82px;}
+.mo .you ul{overflow: hidden;}
+.mo .you ul li{float:left;height:82px;font-size:12px;text-align: center;
+list-style: none}
+.mo .you ul .yi a{color:#ff0}
+.mo .you ul li img{display: block;margin:auto;}
+.mo .you ul li span{display: block;margin-top:5px;}
+.mo .you ul li a{text-decoration: none;color:#fff;display: block;height:72px;padding:10px 19px 0 19px;}
+.mo .you ul li a:hover{background:rgb(65, 71, 73)}
+
+#menu-div{
+background: #575757;
+height: 41px;
+border-bottom: 1px solid #212121;
+}
+#menu-div ul{overflow: hidden;}
+#menu-div ul li{float:left;height: 41px;list-style: none;font-size:12px;
+}
+#menu-div ul .yi{margin-left:20px;}
+#menu-div ul li a img{display: block;margin:auto;float:left;}
+#menu-div ul li a span{display: block;float:left;margin-left:5px;}
+#menu-div ul li a{text-decoration: none;color:#fff;display: block;padding:0 10px 0 10px;
+overflow: hidden;margin-top:10px;}
+.muneFG {
+    height: 13px;
+    width: 0px;
+    border-right: 1px solid #656565;
+    margin-top: 15px;
+    _margin-top: 0px;
+    border-left: 1px solid #303030;
+    display: inline-block;
+    float:left;
+}
+#menu-div ul li span i{display: block;float:left;font-style: normal}
+#menu-div ul li span .hou{height:16px;width:32px;background:red;text-align: center;line-height: 16px;border-radius:10px;
+margin-left:10px; }
+#menu-div ul li:hover{background:#454545}
+
+/*---------------------------------导航栏-------------*/
+.zuo{bottom:0;overflow-y:auto; height:537px;position: relative;left:0;top:123px;float:left;}
+.zuo .daoc{height:34px;background:#303030;width:163px;color:#fff;text-align: center;line-height: 34px;}
+.zuo .xia{width:163px;}
+.zuo .xia .yi{width:163px;}
+.zuo .xia .yi .l{width:163px;min-height:43px;text-align: center;line-height:43px;color:#fff;font-size:12px;border-top:#7f7f7f 1px solid}
+
+.zuo .xia .yi .l:nth-of-type(1){background:#575757 url(../images/menu_1.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(2){background:#575757 url(../images/menu_2.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(3){background:#575757 url(../images/menu_3.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(4){background:#575757 url(../images/menu_4.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(5){background:#575757 url(../images/menu_5.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(6){background:#575757 url(../images/menu_6.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(7){background:#575757 url(../images/menu_7.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(8){background:#575757 url(../images/menu_8.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(9){background:#575757 url(../images/menu_9.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(10){background:#575757 url(../images/menu_10.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(11){background:#575757 url(../images/menu_11.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(12){background:#575757 url(../images/menu_12.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(13){background:#575757 url(../images/menu_13.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(14){background:#575757 url(../images/menu_14.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:nth-of-type(15){background:#575757 url(../images/menu_15.png)no-repeat 12px 0;}
+.zuo .xia .yi .l:hover{background-color:#303030;cursor: pointer}
+.zuo .xia .yi .l .er{display: none;}
+.zuo .xia .yi .l .er li{height:30px;line-height:30px;cursor: pointer;text-align: center;}
+.zuo .xia .yi .l .er li a{color:#fff;text-decoration: none;display: block;height:30px;line-height:30px;width:100%;}
+.zuo .xia .yi .l .er li a:hover{background:#7f7f7f}
+.zuo .xia .yi .l .er li a:visited{background:#7f7f7f}
+.zuo #zuo{overflow: hidden}
+
+/*----------手风琴-----------*/
+.laxuan{width:10px;height:537px;background:#212121;margin-top:123px;float:left; }
+.laxuan p{margin:auto;position:absolute;top:48%;width:10px;height:30px;background:url(../images//arrow_left.gif)no-repeat center}
+
+/*-----------------内容-----------------------*/
+
+
+
+
